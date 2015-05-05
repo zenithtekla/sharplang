@@ -2,17 +2,35 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>SharpLangs</title>
+    <link rel="stylesheet" href="../static/css/styles.css"/>
 </head>
 <body>
-    <table class="table table-hover">
-        {% for line in collums %}
-            <tr>
-                {% for item in line.split(",") %}
-                    <td>{{ item }}</td>
-                {% endfor %}
-            </tr>
-        {% endfor %}
+    <h1>SharpLangs WebApp</h1>
+    <h2 style="margin-left:365px !important;">{{ ct }} entries found</h2>
+    <table title="#Lang" cellpadding="2" cellspacing="2">
+    <tr>
+
+            <td class="tbh">Word</td>
+            <td class="tbh">Language</td>
+            <td class="tbh">Word form</td>
+            <td class="tbh">Meaning</td>
+            <td class="tbh">English definition</td>
+            <td class="tbh">Input date</td>
+
+    </tr>
+
+{%  for qr in qrs %}
+    <tr>
+            <td><b>{{ qr.word }}</b></td>
+            <td><i>{{ qr.inLang }}</i></td>
+            <td class="wfc">{{ qr.form }}</td>
+            <td>{{ qr.meaning }}</td>
+            <td>{{ qr.meanEnglish }}</td>
+            <td>{{ qr.postdate}}</td>
+    </tr>
+{%  endfor %}
+
     </table>
 </body>
 </html>

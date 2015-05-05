@@ -3,21 +3,23 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="../static/css/styles.css"/>
 </head>
 <body>
     <h2>Please enter a word to look up</h2>
-    <form method="post">
+
+    <form action="/filter" method="post">
         <div>
-            <label for="aWord">Type in a Word</label>
-            <input name="aWord" type="text"/>
+            <label for="word">Type in a Word &nbsp;&nbsp;
+                <input type="text" class="inputs" name="word"/>
+            </label>
+
+            <label for="inLang">Your word is in Language (optional): &nbsp;&nbsp;
+                <input type="text" class="inputs" name="inLang"/>
+            </label>
         </div>
-        <div>
-            <label for="inLang">Your word is in Language:</label>
-            <input name="inLang" type="text"/>
-        </div>
-        <div>
-            <button type="submit">Look-Up</button>
-        </div>
+        <br>
+            <input class="btn" type="submit" value="Look-up"/>
     </form>
 </body>
 </html>

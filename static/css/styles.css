@@ -1,0 +1,119 @@
+body{
+    /* background-color: antiquewhite; */
+    background-image: url("../img/chalk_board.png");
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+h1, h2 {
+    color: lightcoral;
+    margin-left: 280px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    background-color: cornsilk;
+    align-self: center;
+    font-size: 1em;
+    margin-left: 50px;
+    color: #444444;
+}
+.tbh{
+    color: darkslategrey !important;
+}
+
+.wfc{
+    color: dodgerblue !important;
+}
+
+p {
+    color: white;
+    font-size: 1.2em;
+}
+
+div {
+    color: darksalmon;
+    font-size: 1.2em;
+}
+
+a:link,a, div:link {
+  color: aquamarine;
+  font-size: 1.4em;
+}
+
+/* custom floats of right, left and below text */
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+section {
+  float: left;
+  width: 30%;
+}
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
+.vasemma {margin-left:5em; float:left; width:20%;}
+
+
+/* custom button http://css3buttongenerator.com/ */
+.btn {
+  background: #F0FFFF;
+  background-image: -webkit-linear-gradient(top, #F0FFFF, #C0C0C0);
+  background-image: -moz-linear-gradient(top, #F0FFFF, #C0C0C0);
+  background-image: -ms-linear-gradient(top, #F0FFFF, #C0C0C0);
+  background-image: -o-linear-gradient(top, #F0FFFF, #C0C0C0);
+  background-image: linear-gradient(to bottom, #F0FFFF, #C0C0C0);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #444444;
+  font-size: 1.4em;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left:9em;
+}
+
+.btn:hover {
+  background: #F4A460;
+  background-image: -webkit-linear-gradient(top, #F0FFFF, #F4A460);
+  background-image: -moz-linear-gradient(top, #F0FFFF, #F4A460);
+  background-image: -ms-linear-gradient(top, #F0FFFF, #F4A460);
+  background-image: -o-linear-gradient(top, #F0FFFF, #F4A460);
+  background-image: linear-gradient(to bottom, #F0FFFF, #F4A460);
+  text-decoration: none;
+}
+
+.inputs {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #EAEAEA;
+    background: -moz-linear-gradient(top, #FFF, #EAEAEA);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFF), color-stop(1.0, #EAEAEA));
+    border: 1px solid #CACACA;
+    color: #444;
+    font-size: 1.2em;
+    margin: 0 15px 25px;
+    padding: 5px 9px;
+    width: 300px;
+    display: inline-block;
+}
+
+.inputs:focus {
+    background: #FFF;
+    -webkit-box-shadow: 0 0 25px #CCC;
+    -moz-box-shadow: 0 0 25px #ccc;
+    box-shadow: 0 0 25px #CCC;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+label {
+    display: block;
+    width: 800px;
+    text-align: right;
+}

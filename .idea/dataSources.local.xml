@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - genius_dictionary@192.254.228.223" uuid="e2c450f8-2cb2-4500-82a3-def04461c151">
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>genius_phuc</user-name>
+    </data-source>
+    <data-source name="SQLite -" uuid="950587cc-c8f8-44d6-a535-39e02e2989ea">
+      <secret-storage>master_key</secret-storage>
+    </data-source>
+  </component>
+</project>

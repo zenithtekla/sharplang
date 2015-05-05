@@ -3,10 +3,34 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Input a word</title>
+    <link rel="stylesheet" href="../static/css/styles.css"/>
 </head>
 <body>
     <h2>Please input a word of your language</h2>
-    <form method="post">
+
+    <form action="/add" method="post">
+        <div>
+            <label for="word">Type in a Word
+                <input type="text" class="inputs" name="word" required maxlength="30"/>
+            </label>
+            <label for="meanEnglish">Give English meaning of your word
+                <input type="text" class="inputs" placeholder="aka" name="meanEnglish"/>
+            </label>
+            <label for="inLang">Your word is in Language
+                <input type="text" class="inputs" name="inLang" required maxlength="15"/>
+            </label>
+            <label for="form">Your word's form
+                <input type="text" class="inputs" placeholder="verb" name="form" required maxlength="15"/>
+            </label>
+            <label for="meaning">Give meaning of your word
+                <input type="text" class="inputs" name="meaning"/>
+            </label>
+        </div>
+        <br>
+        <input class="btn" type="submit" value="Save"/>
+    </form>
+
+ <!--   <form method="post">
         <div>
             <label for="userId">specify your userID</label>
             <input name="userId" type="text"/>
@@ -24,7 +48,7 @@
             <input name="wordForm" type="text"/>
         </div>
         <div>
-            <label for="wordMeaning">Type in your word Meaning</label>
+
             <input name="wordMeaning" type="text"/>
         </div>
         <div>
@@ -34,6 +58,6 @@
         <div>
             <button type="submit">Save</button>
         </div>
-    </form>
+    </form>  */ -->
 </body>
 </html>

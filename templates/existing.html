@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SharpLangs</title>
+    <link rel="stylesheet" href="../static/css/styles.css" type="text/css"/>
+</head>
+<body>
+    <h1>SharpLangs WebApp</h1>
+    <h2>Existing entry</h2>
+    <table title="#Lang" cellpadding="2" cellspacing="2">
+    <tr>
+
+            <td>Word</td>
+            <td>Language</td>
+            <td>Word form</td>
+            <td>Meaning</td>
+            <td>English definition</td>
+            <td>Input date</td>
+
+    </tr>
+    <tr>
+
+            <td><b>{{ qr.word }}</b></td>
+            <td><i>{{ qr.inLang }}</i></td>
+            <td>{{ qr.form }}</td>
+            <td>{{ qr.meaning }}</td>
+            <td>{{ qr.meanEnglish }}</td>
+            <td>{{ qr.postdate}}</td>
+
+    </tr>
+    </table>
+</body>
+</html>

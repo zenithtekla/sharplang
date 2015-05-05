@@ -1,0 +1,53 @@
+# I did many google searches and opened quite many tabs right now so I am getting confused and can't figure what to do next
+
+drop table IF EXISTS entries;
+
+CREATE TABLE users (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	userid VARCHAR(15) NOT NULL,
+	name VARCHAR(15) NOT NULL,
+	email VARCHAR(30) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+	datetime DATETIME NOT NULL,
+	browser VARCHAR(15) NOT NULL,
+	os VARCHAR(15) NOT NULL,
+	ip VARCHAR(15) NOT NULL,
+	location VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE admins (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	userid VARCHAR(15) NOT NULL,
+	name VARCHAR(15) NOT NULL,
+	email VARCHAR(30) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+	datetime DATETIME NOT NULL,
+	browser VARCHAR(15) NOT NULL,
+	os VARCHAR(15) NOT NULL,
+	ip VARCHAR(15) NOT NULL,
+	location VARCHAR(45) NOT NULL,
+	access BIGINT unsigned DEFAULT '4294963199' NOT NULL
+);
+
+CREATE TABLE moderators (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	userid VARCHAR(15) NOT NULL,
+	name VARCHAR(15) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+	datetime DATETIME NOT NULL,
+	browser VARCHAR(15) NOT NULL,
+	os VARCHAR(15) NOT NULL,
+	ip VARCHAR(15) NOT NULL,
+	location VARCHAR(45) NOT NULL,
+	access BIGINT unsigned DEFAULT '4294963199' NOT NULL
+);
+
+CREATE TABLE langs (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	lang VARCHAR(20) NOT NULL,
+	word VARCHAR(50) NOT NULL,
+	form VARCHAR(12) NOT NULL,
+	datetime DATETIME NOT NULL,
+	meaning VARCHAR(200) NOT NULL,
+	example VARCHAR(80) NOT NULL,
+);
